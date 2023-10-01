@@ -10,11 +10,12 @@ class FrondEndcontroller extends Controller
 {
     public function home(){
 
-        $users = User::all();
+        $users = User::withTrashed()->latest()->paginate(10);
+        return view('home',compact('users'));
+
 
        
        
-        return view('welcome',compact('users'));
     }
     public function create(){
        $insert = User::create([
