@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[FrondEndController::class, 'home'])->name('home');
+Route::post('/login-page',[FrondEndcontroller::class,'login'])->name('login-user');
 Route::post('/user',[FrondEndcontroller::class, 'create'])->name('save-user');
 Route::get('/{id}',[FrondEndcontroller::class,'userdelete'])->name('delete-user');

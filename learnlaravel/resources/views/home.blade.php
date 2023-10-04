@@ -45,6 +45,9 @@
 
     </tr>
   </thead>
+
+  <label for="username">Name: {{session()->get('user_name')}}</label>
+  <label for="userid">User_id: {{session()->get('user_id')}}</label>
   <tbody>
     @foreach($users as $user)
     <tr>

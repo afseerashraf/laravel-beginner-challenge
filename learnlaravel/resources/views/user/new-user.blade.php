@@ -36,7 +36,7 @@
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="inputdob" class="col-sm-2 col-form-label">imgage</label>
+    <label for="input_dob" class="col-sm-2 col-form-label">imgage</label>
     <div class="col-sm-10">
       <input type="file" class="form-control" id="fimg" name="img">
     </div>
